@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  
+  .to-do-list {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .to-do-list h1 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+  }
+
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  button[type="submit"]:active {
+    background-color: #2e6c31;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+ 
+  
+  .filters {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .filters label {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .filters select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .filters select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .to-do-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .to-do-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .to-do-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .to-do-list li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .to-do-list li.completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .to-do-list li.completed:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  @media (max-width: 480px) {
+    .to-do-list {
+      max-width: 300px;
+      margin: 20px auto;
+      padding: 15px;
+    }
+    .filters {
+      flex-direction: column;
+    }
+    .filters label {
+      margin-right: 0;
+    }
+    .filters select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .to-do-list li {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .to-do-list {
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .filters {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .filters label {
+      margin-right: 20px;
+    }
+    .filters select {
+      width: 45%;
+      margin-bottom: 10px;
+    }
+    .to-do-list li {
+      padding: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
+  
+  
+@media (min-width: 1024px) {
+    .to-do-list {
+       max-width: 600px;
+       margin: 40px auto;
+       padding: 30px;
+     }
+   }
+   
+   .to-do-list h1 {
+     margin-top: 0;
+     font-weight: bold;
+     color: #333;
+   }
+
+
+   form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s ease-in-out;
+  }
+
+  input[type="text"]:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  button[type="submit"]:active {
+    background-color: #2e6c31;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+.filters {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .filters label {
+    margin-right: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+.filters select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .filters select:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.to-do-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .to-do-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .to-do-list li:last-child {
+    border-bottom: none;
+  }
+  
+.to-do-list li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .to-do-list li.completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .to-do-list li.completed:hover {
+    background-color: #f0f0f0;
+  }
